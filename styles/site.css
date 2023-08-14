@@ -25,7 +25,7 @@ body {
 }
 
 header {
-    font-size: 35px;
+    font-size: 50px;
 }
 
 nav {
@@ -85,6 +85,14 @@ nav ul li {
     margin: 4%;
 }
 
+nav ul li a {
+    text-decoration: none;
+}
+
+.current-page {
+    font-weight: bolder;
+}
+
 p {
     font-size: 23px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -100,7 +108,7 @@ p strong {
 }
 
 .bio {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 #home-body {
@@ -115,6 +123,10 @@ p strong {
 .img-container {
     width: 100%;
     height: auto;
+}
+
+.about-page {
+    line-height: 2;
 }
 
 .about-flex-container {
