@@ -1,54 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hi, I'm Sophia Wang!</title>
-  <link rel="stylesheet" href="style.css" type="text/css" />
-  <script src="script.js"></script>
-  </head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9LCNTQQC1G"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/site.css" type="text/CSS" rel="stylesheet">
+    <title>Sophia's Personal Site</title>
+</head>
 
-  gtag('config', 'G-9LCNTQQC1G');
-</script>
+<body>
+    <nav>
+        <button class="hidden" id="menu-button">Menu</button>
+        <ul id="dropdown-ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+        <button class="hidden" id="close-button">Close</button>
+    </nav>
+    <div class="background">
+        <div id="home-body">
+            <header>
+                <h1>Hi,<br /> I'm Sophia!</h1>
+            </header>
+            <p>Welcome to my portfolio site!</p>
+            <p class="bio">I am a current freshman at Cornell University who is planning on majoring in computer
+            science! I am a curious and hard working individual who is interested in exploring and learning more
+            about many different areas, including machine learning, computer vision, and frontend and backend
+            development. More human/user-oriented areas like natural language processing and web and mobile
+            development also interest me. Currently, I am doing my best to learn more about computer science through
+            my coursework, project team, and extracurriculars. However, there is still so much to learn and I can't
+            wait to delve deeper into this field!</p>
+            <p>Click <a href="about.html">here</a> to learn even more about me.</p>
+        </div>
+        <!-- Source: original creation -->
+        <div id="profile-picture" class="img-container"><img src="images/profile-picture.png" alt="profile picture"></div>
+    </div>
+    <footer>
+        <h3>Contact Info:</h3>
+        <ul>
+            <li><a href="mailto:sophiawang1206@gmail.com">Primary Email</a></li>
+            <li><a href="mailto:sw895@cornell.edu">Cornell Email</a></li>
+            <li><a href="https://www.linkedin.com/in/sophia-wang--/">LinkedIn</a></li>
+            <li><a href="https://github.com/sophiaawang">GitHub</a></li>
+        </ul>
+        <p>Thank you so much for visiting my site! Please don't hesitate to reach out if you have any questions or would
+            like to chat :)</p>
+    </footer>
 
-  <body>
-    <!-- Navigation Bar -->
-    <header class="nav-area">
-      <nav class="nav-bar">
-        <div class="selected nav-section">
-          <a class="selected" href = "index.html">Home</a>
-        </div>
-        <div class="nav-section">
-          <a class="link-color" href = "about.html">About</a>
-        </div>
-        <div class="nav-section">
-          <a class="link-color" href = "experience.html">Experience</a>
-        </div>
-        <div class="nav-section">
-          <a class="link-color" href = "projects.html">Projects</a>
-        </div>
-        <div class="nav-section">
-          <a class="link-color" href = "contact.html">Contact</a>
-        </div>  
-      </nav>
-    </header>
-    <!-- <div>&nbsp;</div> NON-BREAKING SPACE -->
-    <!-- using padding instead?-->
-    <section class="pink body">
-      <section class="text-margin">
-        <h1 id="intro-text">Hi, <br>I'm Sophia!</h1>
-        <h2 id="welcome-text">Welcome to my portfolio site! <br>Click <a class="link-color underlined" href ="about.html">here</a> to learn a little bit <br>more about me.</h2>
-      </section>
-      <section class="image">
-        <img src=image1.jpg alt="Sophia Wang image" width="100%" height="100%">
-      </section>
-    </section>
-  </body>
-  </html>
+    <script src="scripts/jquery-3.6.1.js"></script>
+    <script src="scripts/interactivity.js"></script>
+
+</body>
+
+</html>

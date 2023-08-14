@@ -1,71 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About</title>
-  <link rel="stylesheet" href="style.css" type="text/css" />
-  <script src="index.js"></script>
-  </head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles/site.css" type="text/CSS" rel="stylesheet">
+    <title>About</title>
+</head>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9LCNTQQC1G"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<body>
+    <nav>
+        <button class="hidden" id="menu-button">Menu</button>
+        <ul id="dropdown-ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+        <button class="hidden" id="close-button">Close</button>
+    </nav>
+    <div class="background-2">
+        <h1>About Me:</h1>
+        <div class="about-flex-container">
+            <div class="about-text">
+                <h4>Name:</h4>
+                <p>Sophia Wang (she/her)</p>
+                <h4>Home:</h4>
+                <p>I've lived in <strong>Denver, Colorado</strong> for more than 10 years now, but prior to this, I've
+                    lived in a tiny town called Elko, Nevada and in State College, PA too. I also have three younger
+                    siblings who are a very important part of my home.</p>
+            </div>
+            <!-- Source: original creation -->
+            <div class="about-photo img-container"><img src="images/profile-picture-2.png" alt="second profile picture">
+            </div>
+        </div>
 
-    gtag('config', 'G-9LCNTQQC1G');
-  </script>
 
-  <body>
-    <!-- Navigation Bar -->
-    <header class="nav-area">
-      <nav class="nav-bar">
-        <div class="nav-section">
-          <a class="link-color" href = "index.html">Home</a>
+        <div class="about-flex-container">
+            <div class="about-text">
+                <h4>College:</h4>
+                <p>I'm currently attending <strong>Cornell University</strong> in <strong class="pink-emphasis">Ithaca,
+                        NY</strong> as a freshman planning on studying <strong>Computer Science</strong> in the College
+                    of Engineering with minors in Business and (potentially) Information Science. I'm hoping to explore
+                    different niches of computer science, including computer vision and machine learning, in my future
+                    classes. I want to learn as much as possible here in college to prepare myself for a potential
+                    future in the tech industry.</p>
+            </div>
+            <div class="about-photo">
+                <!-- Source: original creation -->
+                <div class="img-container"><img src="images/clock-tower.png" alt="clock tower photo"></div>
+            </div>
         </div>
-        <div class="selected nav-section">
-          <a class="selected" href = "about.html">About</a>
-        </div>
-        <div class="nav-section">
-          <a class="link-color" href = "experience.html">Experience</a>
-        </div>
-        <div class="nav-section">
-          <a class="link-color" href = "projects.html">Projects</a>
-        </div>
-        <div class="nav-section">
-          <a class="link-color" href = "contact.html">Contact</a>
-        </div>  
-      </nav>
-    </header>
-    <!-- <div>&nbsp;</div> NON-BREAKING SPACE -->
-    <!-- using padding instead?-->
-    <section class="about-pink about-body with-white-border">
-      <section class="closer-margin">
-        <p class="subtitle-text">Name: </p>
-        <p class="body-text">Sophia Wang</p>
-        
-        <h2 class="subtitle-text">Home: </h2>
-        <p class="body-text">I’ve lived in <span class="blue-text">Denver, Colorado</span> for more than 10 years now!</p>
-        
-        <h2 class="subtitle-text">Education: </h2> 
-        <p class="body-text">I’m currently attending <span class="pink-text">Cornell University</span> in <span class="blue-text">Ithaca, NY</span> and I’m a freshman planning on studying <span class="bold-text">Computer Science</span> with minors in Business and (potentially) Information Science.</p>
-        
-        <h2 class="subtitle-text">Relevant Coursework: </h2> 
-        <p class="body-text">Object-Oriented Programming and Data Structures, Multivariable Calculus for Engineers</p>
-        
-        <h2 class="subtitle-text">Hobbies: </h2> 
-        <p class="body-text">Besides coding, in my free time I love to read, listen to music, and hike. Some of my favorite authors are Stephanie Garber (the Caraval series!!), VE Schwab, and Marissa Meyer!</p>
-        <h2 class="subtitle-text">Fun Facts: </h2> 
-        <p class="body-text">This website is still a work in progress so check back later for some fun facts :)<br><br></p>
-        
-      </section>
-      <section class="smaller-image">
-        <img id="round" src="image2.jpg" alt="Sophia Wang image" width="100%" height="100%">
-        <img src="image3.jpeg" alt="Sophia Wang image" width="100%" height="100%">
-      </section>
-    </section>
-  </body>
-  </html>
+
+
+
+        <h4>Relevant Coursework:</h4>
+        <p>Object-Oriented Programming and Data Structures, Discrete Structures, Intro Design and Programming for the
+            Web, Intro to iOS Development, Linear Algebra for Engineers, Multivariable Calculus for Engineers</p>
+
+        <h4>Extracurriculars:</h4>
+        <p>CUAir (Cornell University Unmanned Air Systems) Imaging Systems subteam, Elementary School Outreach Committee
+            - SWE (Society of Women Engineers), WICC (Women in Computing at Cornell)</p>
+
+        <h4>High School:</h4>
+        <p>For high school, I attended Cherry Creek High School. There I participated in clubs such as the National
+            Honor Society, Future Business Leaders of America, and more (you can find more details <a
+                href="experience.html">here</a>). During my time there, I had a cumulative 4.75 weighted GPA and a 3.97
+            unweighted GPA. I was also a high honor roll student, a National Merit Finalist, and a recipient of the
+            Exceptional Quality in Activities award.
+        </p>
+
+        <h4>Hobbies:</h4>
+        <p>Besides coding, in my free time I love to read, listen to music, ski, travel, and hike! My favorite places
+            I've traveled to include London, Redwood National Park, Yellowstone, and Guilin. Some of my favorite pieces
+            of media include the tv show <em>The Good Place</em>, books by Stephanie Garber and by Victoria Schwab, and
+            songs by Taylor Swift and by IU.</p>
+    </div>
+
+    <footer>
+        <h3>Contact Info:</h3>
+        <ul>
+            <li><a href="mailto:sophiawang1206@gmail.com">Primary Email</a></li>
+            <li><a href="mailto:sw895@cornell.edu">Cornell Email</a></li>
+            <li><a href="https://www.linkedin.com/in/sophia-wang--/">LinkedIn</a></li>
+            <li><a href="https://github.com/sophiaawang">GitHub</a></li>
+        </ul>
+        <p>Thank you so much for visiting my site! Please don't hesitate to reach out if you have any questions or would
+            like to chat :)</p>
+    </footer>
+
+    <script src="scripts/jquery-3.6.1.js"></script>
+    <script src="scripts/interactivity.js"></script>
+</body>
+
+</html>

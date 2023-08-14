@@ -1,100 +1,98 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Experience</title>
-  <link rel="stylesheet" href="style.css" type="text/css" />
-  <script src="index.js"></script>
-  </head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="styles/site.css" type="text/CSS" rel="stylesheet">
+    <title>Experience</title>
+</head>
+<body>
+    <nav>
+        <button class="hidden" id="menu-button">Menu</button>
+        <ul id="dropdown-ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+        <button class="hidden" id="close-button">Close</button>
+    </nav>
+    <div class="background-2">
+        <h3>Upcoming:</h3>
+        <div class="exp-body">
+            <h4>Google | Student Training in Engineering Program (STEP) Intern</h4>
+            <h5>May 2023 - Aug. 2023</h5>
+        </div>
+        <h3>Current & Past Experiences</h3>
+        <div class="exp-body">
+            <h4>Cornell University Unmanned Air Systems (CUAir) | Imaging Systems Subteam Member</h4>
+            <h5>October 2022 - Present</h5>
+            <ul>
+                <li>A software subteam responsible for the acquisition and management of aerial images taken during the plane's flight.</li>
+                <li>Currently onboarding: attending workshops for Git, React, and Rust. Created a frontend & backend target-marking web app using React, Springboot, and HTML GET and POST requests to send and receive target information.
+                </li>
+            </ul>
+        </div>
+        <div class="exp-body">
+            <h4>Google | Computer Science Summer Institute (CSSI) | Online</h4>
+            <h5>July 2022 - Aug. 2022</h5>
+            <ul>
+                <li>Participated in a 4-week intensive computer science summer program for high-achieving students</li>
+                <li>Completed an introductory project-based HTML/CSS and JavaScript curriculum taught by Google engineers</li>
+                <li>Configured 3 unique partner coding projects in JavaScript by using concepts such as variables, data types, and functions</li>
+                <li>Attended product design, resume development, and software engineering interview workshops</li>
+                <li>Created a live Monkeypox case tracker that displays worldwide case numbers, cases per country, an interactive map, and data charts with a partner using HTML, CSS, Javascript, libraries such as Google Charts and JQuery, and APIs</li>
+                <li>Delivered a collaborative final project presentation that included a live demonstration to Google employees and community leaders</li>
+            </ul>
+        </div>
+        <div class="exp-body">
+            <h4>STEM Mentorship Academy 501 (c)(3) | Senior Officer | Virtual Position (based in NC)</h4>
+            <h5>June 2021 - Present</h5>
+            <ul>
+                <li>Helped further the mission of providing K-12 students, especially those of disadvantaged backgrounds, with mentorship, guidance, and tutoring in succeeding in STEM by coordinating mentorship opportunities with Google Forms and more</li>
+                <li>Developed 45+ detailed STEM activities for teachers and mentors to use in in-person and virtual mentorship</li>
+                <li>Contacted 3000+ people for mentee recruitment and curated the weekly newsletters</li>
+                <li>Helped craft press releases for local NC news outlets and social media posts (i.e. Instagram)</li>
+            </ul>
+        </div>
+        <div class="exp-body">
+            <h4>Future Business Leaders of America (FBLA) | District 5 Officer, Member</h4>
+            <h5>Aug. 2021 - April 2022, Aug. 2019 - May 2022 (member)</h5>
+            <ul>
+                <li>Organized the keynote speaker, arranged lunch catering, and spoke at the District Leadership Conference (500+ students)</li>
+                <li>Helped direct a product-development workshop for 200-300 FBLA members</li>
+                <li>Competed at District, State, and National conferences in business topics such as E-Business (created a baking subscription site) and Public Service Announcement (crafted a video and presentation on vaping, State Champion)</li>
+                <li>6x District Medalist, 3x State Top 10, 1x Nationals Competitor for live events (presentations) and objective tests</li>
+            </ul>
+        </div>
+        <div class="exp-body">
+            <h4>Denver Chinese School | Math Enrichment Teacher</h4>
+            <h5>Aug. 2020 - May 2022</h5>
+            <ul>
+                <li>Created lesson plans and engaging activities such as Fraction Bingo to teach second- to fourth-grade level math (long division, geometry, etc) to a group of 6-8 elementary-age students (1st Year: Virtual, 2nd Year: In-Person)</li>
+            </ul>
+        </div>
+        <div class="exp-body">
+            <h4>National Honor Society (NHS) | Publicity and Records Executive Board</h4>
+            <h5>Aug. 2021 - May 2022</h5>
+            <ul>
+                <li>Helped organize induction and other school events (eg: Brain Bowl fundraiser for Bags of Fun helping pediatric patients)</li>
+                <li>Tracked hours on Google Sheets for all 300 members and closely managed ~30 members (acted as their point of contact)</li>
+            </ul>
+        </div>
+    </div>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9LCNTQQC1G"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-9LCNTQQC1G');
-  </script>
-
-  <body>
-    <!-- Navigation Bar -->
-    <header class="nav-area">
-      <nav class="nav-bar">
-        <div class="nav-section">
-          <a class="link-color" href = "index.html">Home</a>
-        </div>
-        <div class="nav-section">
-          <a class="link-color" href = "about.html">About</a>
-        </div>
-        <div class="selected nav-section">
-          <a class="selected" href = "experience.html">Experience</a>
-        </div>
-        <div class="nav-section">
-          <a class="link-color" href = "projects.html">Projects</a>
-        </div>
-        <div class="nav-section">
-          <a class="link-color" href = "contact.html">Contact</a>
-        </div>  
-      </nav>
-    </header>
-    <!-- <div>&nbsp;</div> NON-BREAKING SPACE -->
-    <!-- using padding instead?-->
-    <section class="about-pink with-white-border">
-      <section class="closer-margin">
-        
-        
-        <h2 class="heading-text">2022: </h2> 
-        <div>
-          <p class="body-text"><span class="bold-text">Google</span> | <span class="blue-text">Computer Science Summer Institute (CSSI)</span> | Online<br>July 2022 - Aug. 2022</p>
-          <ul class="list">
-              <li>Participated in a 4-week intensive computer science summer program for high-achieving students</li>
-              <li>Completed an introductory project-based <span class="pink-text">HTML/CSS</span> and <span class="pink-text">JavaScript</span> curriculum taught by Google engineers</li> 
-              <li>Configured 3 unique partner coding projects in JavaScript by using concepts such as variables, data types, and functions</li>
-              <li>Attended product design, resume development, and software engineering interview workshops</li>
-              <li>Created a live <span class="pink-text">Monkeypox case tracker</span> that displays worldwide case numbers, cases per country, an interactive map, and data charts with a partner using HTML, CSS, Javascript, libraries such as Google Charts and JQuery, and APIs</li>
-              <li>Delivered a collaborative final project presentation that included a live demonstration to Google employees and community leaders </li>
-          </ul>
-          <br>
-        </div>
-        <div>
-          <p class="body-text"><span class="bold-text">STEM Mentorship Academy 501 (c)(3)</span> | <span class="blue-text">Senior Officer</span> | Virtual Position (based in NC)<br>June 2021 - Present</p>
-          <ul class="list">
-              <li>Helped further the mission of providing K-12 students, especially those of disadvantaged backgrounds, with mentorship, guidance, and tutoring in succeeding in STEM by coordinating mentorship opportunities with Google Forms and more</li>
-              <li>Developed 45+ <span class="pink-text">detailed STEM activities</span> for teachers and mentors to use in in-person and virtual mentorship</li> 
-              <li>Contacted 3000+ people for mentee recruitment and curated the weekly newsletters</li>
-              <li>Helped craft press releases for local NC news outlets and social media posts (i.e. Instagram)</li>
-          </ul>
-          <br>
-        </div>
-        <div>
-          <p class="body-text"><span class="bold-text">Future Business Leaders of America (FBLA)</span> | <span class="blue-text">District 5 Officer</span> | <br>Aug. 2021 - April 2022</p>
-          <ul class="list">
-              <li>Organized the keynote speaker, arranged lunch catering, and spoke at the District Leadership Conference (500+ students)</li>
-              <li>Helped direct a product-development workshop for 200-300 FBLA members</li> 
-              <li>Competed at District, State, and National conferences in business topics such as E-Business (created a baking subscription site) and Public Service Announcement (crafted a video and presentation on vaping, State Champion)</li>
-              <li>6x District Medalist, 3x State Top 10, 1x Nationals Competitor for live events (presentations) and objective tests</li>
-          </ul>
-          <br>
-        </div>
-        <div>
-          <p class="body-text"><span class="bold-text">Denver Chinese School</span> | <span class="blue-text">Math Enrichment Teacher</span> | <br>Aug. 2020 - May 2022</p>
-          <ul class="list">
-              <li>Created lesson plans and engaging activities such as Fraction Bingo to teach second- to fourth-grade level math (long division, geometry, etc) to a group of 6-8 elementary-age students (1st Year: Virtual, 2nd Year: In-Person)</li>
-          </ul>
-          <br>
-        </div>
-        <div>
-          <p class="body-text"><span class="bold-text">National Honor Society (NHS)</span> | <span class="blue-text">Publicity and Records Executive Board</span> | <br>Aug. 2021 - May 2022</p>
-          <ul class="list">
-              <li>Helped organize induction and other school events (eg: Brain Bowl fundraiser for Bags of Fun helping pediatric patients)</li>
-              <li>Tracked hours on Google Sheets for all 300 members and closely managed ~30 members (acted as their point of contact)</li> 
-          </ul>
-          <br>
-        </div>
-      </section>
-    </section>
-  </body>
-  </html>
+    <footer>
+        <h3>Contact Info:</h3>
+        <ul>
+            <li><a href="mailto:sophiawang1206@gmail.com">Primary Email</a></li>
+            <li><a href="mailto:sw895@cornell.edu">Cornell Email</a></li>
+            <li><a href="https://www.linkedin.com/in/sophia-wang--/">LinkedIn</a></li>
+            <li><a href="https://github.com/sophiaawang">GitHub</a></li>
+        </ul>
+        <p>Thank you so much for visiting my site! Please don't hesitate to reach out if you have any questions or would like to chat :)</p>
+    </footer>
+    <script src="scripts/jquery-3.6.1.js"></script>
+    <script src="scripts/interactivity.js"></script>
+</body>
+</html>
