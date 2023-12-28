@@ -46,12 +46,15 @@ button {
   text-decoration-color: #bb509b;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: larger;
-  border-color: #c2abd4;
+  border-color: #e7cfc4;
+  border-bottom-color: #c7aca1;
+  border-right-color: #c7aca1;
   border-radius: 5px;
 }
 
 button:hover {
-  background-color: #dac1f2;
+  /* background-color: #dac1f2; */
+  background-color: #b39a90;
   cursor: pointer;
 }
 
@@ -209,7 +212,7 @@ ul li {
 }
 
 a {
-  color: #3a51a7;
+  color: #816969;
   padding: 10px;
   border-radius: 10px;
 }
