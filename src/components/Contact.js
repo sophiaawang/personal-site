@@ -6,11 +6,11 @@ export function Contact() {
       <ul>
         <li><a href="mailto:sophiawang1206@gmail.com">sophiawang1206@gmail.com</a></li>
         <li><a href="mailto:sw895@cornell.edu">sw895@cornell.edu</a></li>
-        <li><a href="https://www.linkedin.com/in/sophia-wang--/">LinkedIn</a>: sophia-wang--</li>
-        <li><a href="https://github.com/sophiaawang">GitHub</a>: sophiaawang</li>
+        <li><a href="https://www.linkedin.com/in/sophia-wang--/">LinkedIn</a>: /sophia-wang--</li>
+        <li><a href="https://github.com/sophiaawang">GitHub</a>: /sophiaawang</li>
       </ul>
-      <p>Thank you so much for visiting my site! Please don't hesitate to reach out if you have any questions or would
-        like to chat :)</p>
+      <p>Thank you so much for visiting my site! <br />Please don't hesitate to reach out if you have any questions or would
+        like to chat.</p>
     </div>
   );
 }

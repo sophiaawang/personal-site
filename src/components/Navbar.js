@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import '../index.css';
 import $ from "jquery";
 
-const mobileMediaQuery = '(max-width: 600px)'
+const mobileMediaQuery = '(max-width: 850px)'
 
 function Navbar() {
   const [isMobile, setIsMobile] = useState(window.matchMedia(mobileMediaQuery).matches);
@@ -71,7 +71,7 @@ function Navbar() {
             <Link to={page.path}>{page.name}</Link>
           </li>
         ))}
-        <li>
+        <li className={`menu-item ${isMobile ? 'hidden' : ''}`}>
           <a href="Sophia_Wang_resume.pdf" target="_blank">Resume</a>
         </li>
       </ul>

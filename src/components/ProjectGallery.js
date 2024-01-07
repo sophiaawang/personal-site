@@ -87,7 +87,6 @@ function Projects() {
 
   return (
     <div className="background-2">
-      <h1>Project Gallery</h1>
       <div id="proj-body">
         <div id="all-proj">
           {projects.map((project, index) => (
