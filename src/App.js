@@ -20,9 +20,9 @@ export default function App() {
       <div id='app'>
         <Navbar />
         <Routes>
-          <Route path="/about" element={<About />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/personal-site/about" element={<About />} />
+          <Route path="/personal-site/experience" element={<Experience />} />
+          <Route path="/personal-site/projects" element={<Projects />} />
           <Route path="/personal-site" element={<Home />} />
         </Routes>
         <Contact />
