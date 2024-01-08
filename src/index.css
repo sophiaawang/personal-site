@@ -301,16 +301,33 @@ img {
   display: none;
 }
 
+#top-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+#top-icon {
+  margin-top: 0;
+  float: left;
+}
+
+
 .hidden {
   display: none;
 }
 
 /* Wide-screen specific css */
 @media (min-width: 850px) {
+  #top-bar {
+    margin: 0 10%;
+    align-items: center;
+  }
+
   #nav {
-    margin: 1.5% auto;
+    margin: 1.5% 0 1.5% auto;
     position: relative;
     background-color: transparent;
+    width: auto;
   }
 
   #nav ul {
@@ -322,6 +339,10 @@ img {
 
   #nav ul li {
     margin: 1%;
+  }
+
+  #nav ul li a {
+    margin-left: 60px;
   }
 
   .background {

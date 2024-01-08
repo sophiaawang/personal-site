@@ -50,31 +50,36 @@ function Navbar() {
   ];
 
   return (
-    <div id="nav">
-      <button
-        ref={menuButtonRef}
-        className={`button ${isMobile ? '' : 'hidden'}`}
-        id="menu-button"
-        onClick={showMenu}>Menu
-      </button>
-      <button
-        ref={closeButtonRef}
-        className={`button hidden ${isMobile ? '' : 'hidden'}`}
-        id="close-button"
-        onClick={closeMenu}>Close
-      </button>
+    <div id="top-bar">
+      <div id="top-icon">
+        <img src="./images/computer_icon.PNG" alt="cute computer" height={"80px"} />
+      </div>
+      <div id="nav">
+        <button
+          ref={menuButtonRef}
+          className={`button ${isMobile ? '' : 'hidden'}`}
+          id="menu-button"
+          onClick={showMenu}>Menu
+        </button>
+        <button
+          ref={closeButtonRef}
+          className={`button hidden ${isMobile ? '' : 'hidden'}`}
+          id="close-button"
+          onClick={closeMenu}>Close
+        </button>
 
-      {/* TODO fix the curr page thing */}
-      <ul ref={dropdownRef} className={`${isMobile ? 'hidden' : ''}`} id="dropdown-ul">
-        {pages.map((page, index) => (
-          <li key={index} className={`menu-item ${isMobile ? 'hidden' : '' + location.pathname === page.path ? 'current-page' : ''}`}>
-            <Link to={page.path}>{page.name}</Link>
+        {/* TODO fix the curr page thing */}
+        <ul ref={dropdownRef} className={`${isMobile ? 'hidden' : ''}`} id="dropdown-ul">
+          {pages.map((page, index) => (
+            <li key={index} className={`menu-item ${isMobile ? 'hidden' : '' + location.pathname === page.path ? 'current-page' : ''}`}>
+              <Link to={page.path}>{page.name}</Link>
+            </li>
+          ))}
+          <li className={`menu-item ${isMobile ? 'hidden' : ''}`}>
+            <a href="Sophia_Wang_resume.pdf" target="_blank">Resume</a>
           </li>
-        ))}
-        <li className={`menu-item ${isMobile ? 'hidden' : ''}`}>
-          <a href="Sophia_Wang_resume.pdf" target="_blank">Resume</a>
-        </li>
-      </ul>
+        </ul>
+      </div>
     </div>
   );
 }
