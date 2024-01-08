@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar.js";
 import About from "./components/About.js";
 import Experience from "./components/Experience.js";
@@ -16,17 +16,17 @@ export default function App() {
   }, []);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div id='app'>
         <Navbar />
         <Routes>
-          <Route path="/personal-site/about" element={<About />} />
-          <Route path="/personal-site/experience" element={<Experience />} />
-          <Route path="/personal-site/projects" element={<Projects />} />
-          <Route path="/personal-site/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/" element={<Home />} />
         </Routes>
         <Contact />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
