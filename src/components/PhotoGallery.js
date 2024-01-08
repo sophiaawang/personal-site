@@ -3,10 +3,13 @@ import $ from "jquery";
 
 const photos = [
   // empty slots for 2, 3
-  "/images/img1.png", "/images/img4.png",
-  "/images/img5.png", "/images/img6.png", "/images/img7.png", "/images/img8.png",
-  "/images/img9.png", "/images/img10.png", "/images/img11.png", "/images/img12.png",
-  "/images/img13.png", "/images/img14.png", "/images/img15.png"
+  "./personal-site/images/img1.png", "./personal-site/images/img4.png",
+  "./personal-site/images/img5.png", "./personal-site/images/img6.png",
+  "./personal-site/images/img7.png", "./personal-site/images/img8.png",
+  "./personal-site/images/img9.png", "./personal-site/images/img10.png",
+  "./personal-site/images/img11.png", "./personal-site/images/img12.png",
+  "./personal-site/images/img13.png", "./personal-site/images/img14.png",
+  "./personal-site/images/img15.png"
 ]
 
 function Gallery() {

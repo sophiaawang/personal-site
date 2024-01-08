@@ -25,7 +25,7 @@ export function Home() {
             </p>
           </div>
           <div id="profile-picture" className="img-container">
-            <img src="/images/profile-picture.png" alt="profile" />
+            <img src="./personal-site/images/profile-picture.png" alt="profile" />
           </div>
         </div>
         <div>
