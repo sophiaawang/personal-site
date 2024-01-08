@@ -43,7 +43,7 @@ function Navbar() {
   }
 
   const pages = [
-    { name: 'Home', path: '/personal-site' },
+    { name: 'Home', path: '/personal-site/' },
     { name: 'About', path: '/personal-site/about' },
     // { name: 'Experience', path: '/personal-site/experience' },
     { name: 'Projects', path: '/personal-site/projects' }
