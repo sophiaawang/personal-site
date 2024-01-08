@@ -1,6 +1,12 @@
 import React from "react";
 import ProjectGallery from "./ProjectGallery"
-import Resume from "./Resume";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+
+const openResume = () => {
+  window.open("Sophia_Wang_resume.pdf", "_blank");
+}
 
 export function Home() {
   return (
@@ -15,25 +21,29 @@ export function Home() {
             </header>
             <p className="bio">Welcome to my portfolio site!</p>
             <p className="bio">
-              Click <a href="about.html" className="link-no-padding">here</a> to learn more about me.
+              Click <Link to="/about" className="link-no-padding">here</Link> to learn more about me.
             </p>
           </div>
-          {/* Source: original creation */}
           <div id="profile-picture" className="img-container">
-            <img src="/images/profile-picture.png" alt="profile picture" />
+            <img src="/images/profile-picture.png" alt="profile" />
           </div>
         </div>
         <div>
-          <button>Resume</button>
-          <a href="google.com">github, linkedin logo links</a>
+          <button className="page-buttons" onClick={openResume}>Resume</button>
+          <a href="https://www.linkedin.com/in/sophia-wang--/" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} size="xl" />
+          </a>
+          <a href="https://github.com/sophiaawang" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faGithub} size="xl" />
+          </a>
+
         </div>
       </div>
       <div className="gallery-resume">
         <div className="proj-col">
-          <h1><a href="/projects">Projects</a></h1>
+          <p><Link to="/projects" className="page-buttons">Projects</Link></p>
           <ProjectGallery />
         </div>
-        {/* <div className="home-resume"><Resume /></div> */}
       </div>
     </div>
   );
