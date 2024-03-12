@@ -3,13 +3,13 @@
 }
 
 .pink-background {
-  background-color: #fbe3e5ff;
+  background-color: #ffedee;
   padding: 2.5% 3%;
   margin: 1%;
 }
 
 .background-2 {
-  background-color: #f7eae5;
+  background-color: #fbefea;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,7 +50,7 @@ header {
 }
 
 button {
-  background-color: #796262;
+  background-color: #a9897c;
   color: white;
   text-decoration-color: #bb509b;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -258,14 +258,15 @@ a {
 }
 
 a:hover, .current-page a {
-  background-color: rgb(236, 213, 245);
-  font-weight: bold;
+  background-color: #82665a;
+  color: white;
+  /* font-weight: bold; */
 }
 
 #contact {
   margin: 1%;
   padding: 2%;
-  background-color: #f7edd9;
+  background-color: #fff9ed;
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
