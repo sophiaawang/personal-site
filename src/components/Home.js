@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const openResume = () => {
-  window.open("Sophia_Wang_resume.pdf", "_blank");
+  window.open("Sophia_Wang_Resume.pdf", "_blank");
 }
 
 export function Home() {

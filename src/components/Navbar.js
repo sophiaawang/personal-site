@@ -76,7 +76,7 @@ function Navbar() {
             </li>
           ))}
           <li className={`menu-item ${isMobile ? 'hidden' : ''}`}>
-            <a href="Sophia_Wang_resume.pdf" target="_blank">Resume</a>
+            <a href="Sophia_Wang_Resume.pdf" target="_blank">Resume</a>
           </li>
         </ul>
       </div>
