@@ -4,8 +4,15 @@
 
 .pink-background {
   background-color: #ffedee;
-  padding: 2.5% 3%;
+  padding: 7%;
   margin: 1%;
+  border: 1px solid;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+.pink-background h1 {
+  margin: 3% 0 9% 0;
 }
 
 .background-2 {
@@ -15,11 +22,19 @@
   align-items: center;
   align-items: flex-start;
   padding: 1.5% 5%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.background-2:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .background-3 {
   background-color: #e5f3f7;
-  padding: 1.5% 5%
+  padding: 1.5% 5%;
+  border: 1px solid;
+  border-radius: 10px;
 }
 
 .page-body {
@@ -36,7 +51,7 @@ body {
 }
 
 header {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 #nav {
@@ -50,7 +65,7 @@ header {
 }
 
 button {
-  background-color: #a9897c;
+  background-color: #796262;
   color: white;
   text-decoration-color: #bb509b;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -116,7 +131,7 @@ strong {
 }
 
 .bio {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 #home-body {
@@ -239,7 +254,6 @@ h5 {
   background-color:#796262;
   color: white;
   border: none;
-  margin-right: 15px;
 }
 
 ul li {
@@ -248,8 +262,7 @@ ul li {
 
 a {
   color: #796262;
-  padding: 10px;
-  border-radius: 10px;
+  /* padding: 10px; */
 }
 
 .link-no-padding {
@@ -260,6 +273,7 @@ a {
 a:hover, .current-page a {
   background-color: #82665a;
   color: white;
+  border-radius: 8px;
   /* font-weight: bold; */
 }
 
@@ -269,10 +283,13 @@ a:hover, .current-page a {
   background-color: #fff9ed;
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid;
+  border-radius: 10px;
 }
 
 #contact p {
   padding: 0% 2%;
+  font-size: 18px;
 }
 
 #contact ul {
@@ -283,6 +300,13 @@ a:hover, .current-page a {
 #contact ul li {
   flex-basis: 50%;
   padding-bottom: 1%;
+  font-size: 18px;
+}
+
+#contact a:hover {
+  font-weight: bold;
+  background-color: transparent;
+  color: #796262;
 }
 
 .gallery-resume {
@@ -313,11 +337,22 @@ img {
 #top-bar {
   display: flex;
   flex-direction: row;
+  margin-bottom: 10px;
 }
 
 #top-icon {
   margin-top: 0;
   float: left;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.socials a {
+  padding: 6px;
 }
 
 
@@ -327,9 +362,14 @@ img {
 
 /* Wide-screen specific css */
 @media (min-width: 850px) {
+  .bio {
+    font-size: 25px;
+  }
+
   #top-bar {
     margin: 0 10%;
     align-items: center;
+    margin-bottom: auto;
   }
 
   #nav {
@@ -353,6 +393,11 @@ img {
 
   #nav ul li a {
     margin-left: 60px;
+    padding: 10px;
+  }
+
+  header {
+    font-size: 50px;
   }
 
   .background {
@@ -377,7 +422,7 @@ img {
   }
 
   .about-gallery {
-    margin: 1% 10%;
+    margin: 25px 10%;
   }
 
   .gallery-resume {
@@ -394,6 +439,10 @@ img {
     margin: 1% 10%;
   }
 
+  #contact p {
+    font-size: 20px;
+  }
+
   #contact ul {
     display: flex;
     flex-direction: row;
@@ -403,6 +452,7 @@ img {
   #contact ul li {
     flex-basis: 50%;
     padding-bottom: 1%;
+    font-size: 20px;
   }
 
   #profile-picture {

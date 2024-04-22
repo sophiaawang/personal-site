@@ -28,7 +28,7 @@ export function Home() {
             <img src="./images/profile-picture.png" alt="profile" />
           </div>
         </div>
-        <div>
+        <div className="socials">
           <button className="page-buttons" onClick={openResume}>Resume</button>
           <a href="https://www.linkedin.com/in/sophia-wang--/" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faLinkedin} size="xl" />

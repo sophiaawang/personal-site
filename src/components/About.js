@@ -24,7 +24,7 @@ const About = () => {
           <h4>Technical Skills</h4>
           <ul>
             <li><strong>Frontend: </strong> React, Redux, SwiftUI, HTML, CSS, JS</li>
-            <li><strong>Backend: </strong> Java, Python, OCaml, SQL</li>
+            <li><strong>Backend: </strong> Java, Python, OCaml, SQL, Prisma, Spring</li>
             <li><strong>Libraries/Frameworks: </strong> JUnit, NumPy, SciPy, Scikit-learn, MYSQL, SQLAlchemy, JQuery</li>
             <li><strong>Tools: </strong> Git, Docker, Google Cloud Platform, VSCode, IntelliJ, XCode</li>
           </ul>
@@ -36,7 +36,7 @@ const About = () => {
             <li><strong>FA22 -</strong> O-OP & DSA (Java), Multivariable Calculus</li>
             <li><strong>SP23 -</strong> Discrete Structures, Design & Programming for the Web (HTML, CSS, JS), Intro to iOS (SwiftUI)</li>
             <li><strong>FA23 -</strong> DSA & Functional Programming (OCaml), Data Science (Python), Intro to Backend (Flask), Probability Models and Inference</li>
-            <li><strong>SP24 -</strong> Analysis of Algorithms (Java), Machine Learning (Python, NumPy, PyTorch)</li>
+            <li><strong>SP24 -</strong> Analysis of Algorithms (Java), Machine Learning (Python, NumPy, PyTorch), Computer Vision (NumPy, Pillow) </li>
           </ul>
         </div>
 
@@ -44,7 +44,7 @@ const About = () => {
           <h4>Campus Involvement</h4>
           <ul>
             <li><strong>Cornell University Unmanned Air Systems</strong> (CUAir) - Imaging Systems Subteam</li>
-            <li><strong>Women in Computing At Cornell</strong> (WICC) - Active Member, Mentor</li>
+            <li><strong>Women in Computing At Cornell</strong> (WICC) - Technical Committee, Mentor</li>
             <li><strong>Society of Women Engineers</strong> (SWE) - Elementary Outreach Committee Member</li>
             <li><strong>Association of Computer Science Undergraduates</strong> (ACSU) - Social Officer</li>
           </ul>
