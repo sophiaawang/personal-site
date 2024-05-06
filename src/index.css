@@ -64,10 +64,10 @@ header {
   align-items: flex-end;
 }
 
-button {
+button, .link-button {
   background-color: #796262;
   color: white;
-  text-decoration-color: #bb509b;
+  /* text-decoration-color: #bb509b; */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: larger;
   border: none;
@@ -75,9 +75,14 @@ button {
   transition-duration: 0.4s;
 }
 
-button:hover {
+.link-button {
+  text-decoration: none;  
+}
+
+button:hover, .link-button:hover, .socialmedia:hover {
   /* background-color: #dac1f2; */
-  background-color: #b39a90;
+  /* background-color: #b39a90; */
+  background-color: #dabfb5;
   cursor: pointer;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
@@ -145,6 +150,10 @@ strong {
 .img-container {
   width: 75%;
   height: auto;
+}
+
+.about-gallery {
+  margin: 5% auto;
 }
 
 .about-flex-container {
@@ -270,7 +279,7 @@ a {
   border-radius: 0;
 }
 
-a:hover, .current-page a {
+.menu-item a:hover, .current-page a {
   background-color: #82665a;
   color: white;
   border-radius: 8px;
@@ -278,7 +287,7 @@ a:hover, .current-page a {
 }
 
 #contact {
-  margin: 1%;
+  margin: 5% 1%;
   padding: 2%;
   background-color: #fff9ed;
   font-size: 20px;
@@ -307,6 +316,10 @@ a:hover, .current-page a {
   font-weight: bold;
   background-color: transparent;
   color: #796262;
+}
+
+.bio a:hover {
+  color:#6c5656;
 }
 
 .gallery-resume {
@@ -436,7 +449,7 @@ img {
   }
 
   #contact {
-    margin: 1% 10%;
+    margin: 2% 10%;
   }
 
   #contact p {

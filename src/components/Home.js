@@ -8,6 +8,10 @@ const openResume = () => {
   window.open("Sophia_Wang_Resume.pdf", "_blank");
 }
 
+const openProjects = () => {
+  window.location.href = '/projects'
+}
+
 export function Home() {
   return (
     <div>
@@ -30,19 +34,15 @@ export function Home() {
         </div>
         <div className="socials">
           <button className="page-buttons" onClick={openResume}>Resume</button>
-          <a href="https://www.linkedin.com/in/sophia-wang--/" target="_blank" rel="noreferrer">
+          <Link className="link-button" to="/projects">Projects</Link>
+          {/* <button className="page-buttons" onClick={openProjects}>Projects</button> */}
+          <a className='socialmedia' href="https://www.linkedin.com/in/sophia-wang--/" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faLinkedin} size="xl" />
           </a>
-          <a href="https://github.com/sophiaawang" target="_blank" rel="noreferrer">
+          <a className='socialmedia' href="https://github.com/sophiaawang" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faGithub} size="xl" />
           </a>
 
-        </div>
-      </div>
-      <div className="gallery-resume">
-        <div className="proj-col">
-          <p><Link to="/projects" className="page-buttons">Projects</Link></p>
-          <ProjectGallery />
         </div>
       </div>
     </div>
