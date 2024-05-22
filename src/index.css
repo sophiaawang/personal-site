@@ -128,11 +128,15 @@ p {
 
 strong {
   font-weight: bold;
-  color: #405189;
+  color: #488297;
 }
 
 .pink-emphasis {
-  color: #bb509b;
+  color: #d35586;
+}
+
+.snd-emphasis {
+  color: #85597f;
 }
 
 .bio {
@@ -274,6 +278,11 @@ a {
   /* padding: 10px; */
 }
 
+.gallery-item a {
+  color: #030a24;
+  text-decoration: none;
+}
+
 .link-no-padding {
   padding: 0;
   border-radius: 0;
@@ -312,10 +321,17 @@ a {
   font-size: 18px;
 }
 
-#contact a:hover {
+#contact a {
+  /* color:#6f5a5a; */
+  /* font-weight: 500; */
+  color: #796262;
+}
+
+#contact a:hover, .projects a:hover {
   font-weight: bold;
   background-color: transparent;
-  color: #796262;
+  /* color: #796262; */
+  color: #826C7F;
 }
 
 .bio a:hover {

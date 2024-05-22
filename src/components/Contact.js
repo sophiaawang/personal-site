@@ -9,8 +9,7 @@ export function Contact() {
         <li><a href="https://www.linkedin.com/in/sophia-wang--/" target="_blank" rel="noreferrer">LinkedIn</a>: /sophia-wang--</li>
         <li><a href="https://github.com/sophiaawang" target="_blank" rel="noreferrer">GitHub</a>: /sophiaawang</li>
       </ul>
-      <p>Thank you so much for visiting my site! <br />Please don't hesitate to reach out if you have any questions or would
-        like to chat.</p>
+      <p>Thank you so much for visiting my site! <br />Please reach out if you have any questions or want to chat.</p>
     </div>
   );
 }

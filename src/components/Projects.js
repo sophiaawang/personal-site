@@ -19,7 +19,7 @@ function Projects() {
         <button value="grid" onClick={(evt) => changeView(evt)}>Grid</button>
         <button value="gallery" onClick={(evt) => changeView(evt)}>Gallery</button>
       </div> */}
-      <p>Check out my github <a href="https://github.com/sophiaawang" target="_blank" rel="noreferrer">(@sophiaawang)</a> for more!</p>
+      <p className="projects">Check out my github <a href="https://github.com/sophiaawang" target="_blank" rel="noreferrer">@sophiaawang</a> for more!</p>
       {view === "grid" && <ProjectGrid />}
       {view === "gallery" && <ProjectGallery />}
     </div>

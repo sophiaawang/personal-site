@@ -52,7 +52,9 @@ function Navbar() {
   return (
     <div id="top-bar">
       <div id="top-icon">
-        <img src="./images/computer_icon.PNG" alt="cute computer" height={"80px"} />
+        <Link to='/'>
+          <img src="./images/computer_icon.PNG" alt="cute computer" height={"80px"} />
+        </Link>
       </div>
       <div id="nav">
         <button
